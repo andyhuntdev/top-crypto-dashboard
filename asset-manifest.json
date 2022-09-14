@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/top-crypto-dashboard/static/js/main.3fe19b5e.js",
+    "main.js": "/top-crypto-dashboard/static/js/main.380874a1.js",
     "static/js/787.4dded3e6.chunk.js": "/top-crypto-dashboard/static/js/787.4dded3e6.chunk.js",
     "index.html": "/top-crypto-dashboard/index.html",
-    "main.3fe19b5e.js.map": "/top-crypto-dashboard/static/js/main.3fe19b5e.js.map",
+    "main.380874a1.js.map": "/top-crypto-dashboard/static/js/main.380874a1.js.map",
     "787.4dded3e6.chunk.js.map": "/top-crypto-dashboard/static/js/787.4dded3e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3fe19b5e.js"
+    "static/js/main.380874a1.js"
   ]
 }
