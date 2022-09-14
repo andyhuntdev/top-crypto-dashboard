@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import React, { useEffect, useRef, useState } from 'react';
+import 'chart.js/auto';
 import { Chart } from 'react-chartjs-2';
 import {
     Chart as ChartJS,
