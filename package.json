@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "description": "Crypto dashboard for monitoring top 100 coins by market cap",
   "author": "andyhuntdev <info@andreacaccia.com>",
-  "private": true,
+  "private": false,
+  "homepage": "https://andyhuntdev.github.io/top-crypto-dashboard",
   "keywords": [
     "react",
     "react.js",
@@ -27,6 +28,7 @@
     "chart.js": "^3.9.1",
     "chartjs-adapter-moment": "^1.0.0",
     "framer-motion": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.3.1",
@@ -37,6 +39,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
