@@ -14,6 +14,8 @@ import {
     FlexProps,
     Heading,
     Show,
+    Button,
+    Link,
 } from '@chakra-ui/react';
 import { FiMenu } from 'react-icons/fi';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -40,7 +42,7 @@ export default function Shell({ children }: { children: ReactNode }) {
             </Drawer>
             {/* mobilenav */}
             <MobileNav onOpen={onOpen} />
-            <Box ml={{ base: 0, lg: 60 }} p="6">
+            <Box ml={{ base: 0, lg: 60 }} px="6" pt="6">
                 {children}
             </Box>
         </Box>
@@ -71,7 +73,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
                 </Heading>
                 <CloseButton display={{ base: 'flex', lg: 'none' }} onClick={onClose} />
             </Flex>
-            <List onClose={onClose}/>
+            <List onClose={onClose} />
         </Box>
     );
 };
@@ -101,16 +103,25 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
             />
 
             <Text display={{ base: 'flex', lg: 'none' }} fontSize="xl" fontWeight="bold">
-            Top Crypto
+                Top Crypto
             </Text>
 
-            <HStack spacing={{ base: '0', lg: '6' }} justifyContent="space-between" w={{xl: '100%'}}>
+            <HStack
+                spacing={{ base: '0', lg: '6' }}
+                justifyContent="space-between"
+                w={{ xl: '100%' }}
+            >
                 <Show above="lg">
                     <Flex alignItems={'center'}>
                         <Strip />
                     </Flex>
                 </Show>
-                <ColorModeSwitcher />
+                <HStack>
+                    <Link href="https://github.com/andyhuntdev/top-crypto-dashboard" target="_blank" isExternal _hover={{textDecoration: 'none'}}>
+                        <Button>Github</Button>
+                    </Link>
+                    <ColorModeSwitcher />
+                </HStack>
             </HStack>
         </Flex>
     );
