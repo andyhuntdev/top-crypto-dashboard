@@ -37,13 +37,13 @@ export default function CoinSupply() {
                         <Tr>
                             <Td px={0}>Circulating</Td>
                             <Td px={0} isNumeric>
-                                {selected.circulating_supply.toLocaleString()}
+                                {selected?.circulating_supply ? selected.circulating_supply.toLocaleString() : '-'}
                             </Td>
                         </Tr>
                         <Tr>
                             <Td px={0}>Total</Td>
                             <Td px={0} isNumeric>
-                                {selected.total_supply.toLocaleString()}
+                                {selected?.total_supply ? selected.total_supply.toLocaleString() : '-'}
                             </Td>
                         </Tr>
                         <Tr>
@@ -51,7 +51,7 @@ export default function CoinSupply() {
                                 Max
                             </Td>
                             <Td px={0} borderColor="transparent" isNumeric>
-                                {!!selected.max_supply ? selected.max_supply.toLocaleString() : 'infinity'}
+                                {selected?.max_supply ? !!selected.max_supply ? selected.max_supply.toLocaleString() : 'infinity' : '-'}
                             </Td>
                         </Tr>
                     </Tbody>
