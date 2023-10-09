@@ -22,11 +22,11 @@ A web app for monitoring the top 100 cryptocurrencies using <a href="https://www
 ### Installation
 1. Clone repo
 ````
-git clone https://github.com/andyhuntdev/aniscover.git
+git clone https://github.com/andyhuntdev/top-crypto-dashboard.git
 ````
 2. Go in folder
 ````
-cd aniscover
+cd top-crypto-dashboard
 ````
 3. Install packages
 `````
